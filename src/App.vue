@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <harmony-top/>
+    <harmony-nav/>
+    <harmony-form/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import harmonyForm from './views/harmonyForm'
+import harmonyTop from './components/harmonyTop'
+import harmonyNav from './components/harmonyNav'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    harmonyForm,
+    harmonyTop,
+    harmonyNav,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
